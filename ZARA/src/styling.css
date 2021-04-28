@@ -10,7 +10,7 @@ and open the template in the editor.
 
 /* Elements within top navigation bar ----------------------------------------*/
 #topPanel{
-    -fx-background-color: linear-gradient(#E6E6E6,#FFFFFF);
+    -fx-background-color: linear-gradient(to bottom, #E6E6E6 60%, #FFFFFF);
 }
 
 #mensTopLabel{
@@ -31,21 +31,21 @@ and open the template in the editor.
 /* Elements within main section ----------------------------------------------*/
 #mensMainLabel{
     -fx-font-family: Verdana;
-    -fx-font-size: 50px;
+    -fx-font-size: 40px;
 }
 
 #womensMainLabel{
     -fx-font-family: Verdana;
-    -fx-font-size: 50px;
+    -fx-font-size: 40px;
 }
 
 #kidsMainLabel{
     -fx-font-family: Verdana;
-    -fx-font-size: 50px;
+    -fx-font-size: 40px;
 }
 
 /* Elements within bottom footer bar -----------------------------------------*/
 #bottomPanel{
-    -fx-background-color: linear-gradient(#FFFFFF,#E6E6E6);
+    -fx-background-color: linear-gradient(to top, #E6E6E6 20%, #FFFFFF);
 }
 
