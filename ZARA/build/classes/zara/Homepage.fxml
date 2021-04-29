@@ -1,26 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane id="AnchorPane" prefHeight="1080" prefWidth="1920" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zara.HomepageController">
    <children>
       <Pane id="topPanel" fx:id="topPanel" layoutX="46.0" layoutY="8.0" prefHeight="150.0" prefWidth="1920.0" stylesheets="@../styling.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <ImageView fx:id="mainLogo" fitHeight="126.0" fitWidth="306.0" layoutX="69.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="mainLogo" fitHeight="126.0" fitWidth="306.0" layoutX="70.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../BigZaraIcon.png" />
                </image></ImageView>
             <Label id="womensTopLabel" alignment="CENTER" layoutX="600.0" layoutY="37.0" prefHeight="80.0" prefWidth="160.0" stylesheets="@../styling.css" text="WOMEN" />
             <Label id="mensTopLabel" alignment="CENTER" layoutX="430.0" layoutY="37.0" prefHeight="80.0" prefWidth="160.0" stylesheets="@../styling.css" text="MEN" />
             <Label id="kidsTopLabel" alignment="CENTER" layoutX="770.0" layoutY="37.0" prefHeight="80.0" prefWidth="160.0" stylesheets="@../styling.css" text="KIDS" />
+            <TextField id="searchBar" layoutX="1570.0" layoutY="90.0" prefHeight="42.0" prefWidth="280.0" promptText="Search">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label id="loginLabel" layoutX="1570.0" layoutY="40.0" prefHeight="31.0" prefWidth="170.0" text="Log In / Register">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView id="accountIconImg" fitHeight="35.0" fitWidth="40.0" layoutX="1750.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Account-Icon.png" />
+               </image>
+            </ImageView>
+            <ImageView id="cartIconImg" fitHeight="35.0" fitWidth="40.0" layoutX="1810.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Cart-Icon.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
-      <Pane id="bottomPanel" fx:id="bottomPanel" layoutX="314.0" layoutY="839.0" prefHeight="100.0" prefWidth="200.0" stylesheets="@../styling.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
-      <Pane layoutX="63.0" layoutY="202.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
+      <Pane id="bottomPanel" fx:id="bottomPanel" layoutX="314.0" layoutY="839.0" prefHeight="75.0" prefWidth="200.0" stylesheets="@../styling.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label id="newsletterLabel" layoutX="70.0" layoutY="17.0" prefHeight="41.0" prefWidth="225.0" text="JOIN OUR NEWSLETTER:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField id="enterEmailTextField" layoutX="295.0" layoutY="17.0" prefHeight="41.0" prefWidth="300.0" promptText="Enter email address" />
+         </children></Pane>
+      <Pane layoutX="63.0" layoutY="202.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
          <children>
             <ImageView id="mensImg" fitHeight="600.0" fitWidth="400.0" layoutX="100.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
                <image>

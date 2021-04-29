@@ -16,6 +16,14 @@ and open the template in the editor.
 #mensTopLabel{
     -fx-font-family: Verdana;
     -fx-font-size: 30px;
+    /*hover{
+        -fx-underline: true;
+        text-decoration: underline;
+    }*/
+}
+
+#mensTopLabel.hover{
+    text-decoration: underline;
 }
 
 #womensTopLabel{
@@ -26,6 +34,11 @@ and open the template in the editor.
 #kidsTopLabel{
     -fx-font-family: Verdana;
     -fx-font-size: 30px;
+}
+
+#searchBar{
+    /*Prompt text will be displayed unless user enters text */
+    -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);
 }
 
 /* Elements within main section ----------------------------------------------*/
@@ -47,5 +60,9 @@ and open the template in the editor.
 /* Elements within bottom footer bar -----------------------------------------*/
 #bottomPanel{
     -fx-background-color: linear-gradient(to top, #E6E6E6 20%, #FFFFFF);
+}
+
+#enterEmailTextField{
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);
 }
 
