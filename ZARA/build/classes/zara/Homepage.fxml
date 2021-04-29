@@ -35,7 +35,7 @@
             <Button id="mensTopBtn" layoutX="430.0" layoutY="37.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="161.0" stylesheets="@../styling.css" text="MEN" />
             <Button id="womensTopBtn" layoutX="600.0" layoutY="37.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="161.0" stylesheets="@../styling.css" text="WOMEN" />
             <Button id="kidsTopBtn" layoutX="770.0" layoutY="37.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="161.0" stylesheets="@../styling.css" text="KIDS" />
-            <Button id="loginBtn" layoutX="1515.0" layoutY="40.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="225.0" stylesheets="@../styling.css" text="Log In / Register">
+            <Button id="loginBtn" layoutX="1540.0" layoutY="40.0" mnemonicParsing="false" prefHeight="39.0" stylesheets="@../styling.css" text="Log In / Register">
                <font>
                   <Font size="20.0" />
                </font>
@@ -44,12 +44,22 @@
       </Pane>
       <Pane id="bottomPanel" fx:id="bottomPanel" layoutX="314.0" layoutY="839.0" prefHeight="75.0" prefWidth="200.0" stylesheets="@../styling.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
-            <Label id="newsletterLabel" layoutX="70.0" layoutY="17.0" prefHeight="41.0" prefWidth="225.0" text="JOIN OUR NEWSLETTER:">
+            <Label id="newsletterLabel" layoutX="70.0" layoutY="17.0" prefHeight="41.0" prefWidth="184.0" text="JOIN OUR NEWSLETTER:">
                <font>
-                  <Font size="18.0" />
+                  <Font size="15.0" />
                </font>
             </Label>
-            <TextField id="enterEmailTextField" layoutX="295.0" layoutY="17.0" prefHeight="41.0" prefWidth="300.0" promptText="Enter email address" />
+            <TextField id="enterEmailTextField" layoutX="254.0" layoutY="17.0" prefHeight="41.0" prefWidth="300.0" promptText="Enter email address" />
+            <ImageView fitHeight="48.0" fitWidth="35.0" layoutX="1810.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Help-Icon.png" />
+               </image>
+            </ImageView>
+            <Button id="instaBtn" layoutX="1336.0" layoutY="25.0" mnemonicParsing="false" stylesheets="@../styling.css" text="INSTAGRAM" />
+            <Button id="facebookBtn" layoutX="1432.0" layoutY="25.0" mnemonicParsing="false" stylesheets="@../styling.css" text="FACEBOOK" />
+            <Button id="twitterBtn" layoutX="1522.0" layoutY="25.0" mnemonicParsing="false" stylesheets="@../styling.css" text="TWITTER" />
+            <Button id="pinterestBtn" layoutX="1598.0" layoutY="25.0" mnemonicParsing="false" stylesheets="@../styling.css" text="PINTEREST" />
+            <Button id="youtubeBtn" layoutX="1687.0" layoutY="25.0" mnemonicParsing="false" stylesheets="@../styling.css" text="YOUTUBE" />
          </children></Pane>
       <Pane layoutX="63.0" layoutY="202.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
          <children>
@@ -68,9 +78,13 @@
                   <Image url="@../Homepage-Kids.jpg" />
                </image>
             </ImageView>
-            <Label id="mensMainLabel" alignment="CENTER" layoutX="220.0" layoutY="720.0" prefHeight="80.0" prefWidth="160.0" stylesheets="@../styling.css" text="MEN" />
-            <Label id="womensMainLabel" alignment="CENTER" layoutX="825.0" layoutY="720.0" prefHeight="80.0" prefWidth="300.0" stylesheets="@../styling.css" text="WOMEN" />
-            <Label id="kidsMainLabel" alignment="CENTER" layoutX="1540.0" layoutY="720.0" prefHeight="80.0" prefWidth="160.0" stylesheets="@../styling.css" text="KIDS" />
+            <Button id="mensMidBtn" layoutX="220.0" layoutY="720.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="160.0" stylesheets="@../styling.css" text="MEN">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Button>
+            <Button id="womensMidBtn" layoutX="868.0" layoutY="720.0" mnemonicParsing="false" stylesheets="@../styling.css" text="WOMEN" />
+            <Button id="kidsMidBtn" layoutX="1546.0" layoutY="720.0" mnemonicParsing="false" stylesheets="@../styling.css" text="KIDS" />
          </children>
       </Pane>
    </children>
