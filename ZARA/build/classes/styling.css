@@ -8,32 +8,43 @@ and open the template in the editor.
     Author     : student
 */
 
+/* Class styling -------------------------------------------------------------*/
+.button{
+    -fx-background-color: transparent;
+}
+
+.button:hover{
+    -fx-underline: true;
+}
+
 /* Elements within top navigation bar ----------------------------------------*/
 #topPanel{
     -fx-background-color: linear-gradient(to bottom, #E6E6E6 60%, #FFFFFF);
 }
 
-#mensTopLabel{
-    -fx-font-family: Verdana;
-    -fx-font-size: 30px;
-    /*hover{
-        -fx-underline: true;
-        text-decoration: underline;
-    }*/
-}
-
-#mensTopLabel.hover{
-    text-decoration: underline;
-}
-
-#womensTopLabel{
+#mensTopBtn{
     -fx-font-family: Verdana;
     -fx-font-size: 30px;
 }
 
-#kidsTopLabel{
+#womensTopBtn{
     -fx-font-family: Verdana;
     -fx-font-size: 30px;
+}
+
+#kidsTopBtn{
+    -fx-font-family: Verdana;
+    -fx-font-size: 30px;
+}
+
+#loginBtn:hover{
+    -fx-underline: false;
+    /*-fx-font-weight: bold;*/
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 2, 0, 0, 0);
+}
+
+#accountIconImg:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);
 }
 
 #searchBar{
