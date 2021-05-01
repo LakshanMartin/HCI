@@ -1,0 +1,117 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29/04/2021, 1:35:01 AM
+    Author     : student
+*/
+
+/* Class styling -------------------------------------------------------------*/
+.button{
+    -fx-background-color: transparent;
+}
+
+.button:hover{
+    -fx-underline: true;
+}
+
+.image-view:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+}
+
+/* Elements within top navigation bar ----------------------------------------*/
+#topPanel{
+    -fx-background-color: linear-gradient(to bottom, #E6E6E6 60%, #FFFFFF);
+}
+
+#mensTopBtn{
+    -fx-font-family: Verdana;
+    -fx-font-size: 30px;
+}
+
+#womensTopBtn{
+    -fx-font-family: Verdana;
+    -fx-font-size: 30px;
+}
+
+#kidsTopBtn{
+    -fx-font-family: Verdana;
+    -fx-font-size: 30px;
+}
+
+#loginBtn:hover{
+    -fx-underline: false;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+}
+
+#searchBar{
+    /*Prompt text will be displayed unless user enters text */
+    -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);
+}
+
+/* Elements within main section ----------------------------------------------*/
+#mensMidBtn{
+    -fx-font-family: Verdana;
+    -fx-font-size: 40px;
+}
+#mensMidBtn:hover{
+    -fx-underline: false;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+}
+
+#womensMidBtn{
+    -fx-font-family: Verdana;
+    -fx-font-size: 40px;
+}
+#womensMidBtn:hover{
+    -fx-underline: false;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+}
+
+#kidsMidBtn{
+    -fx-font-family: Verdana;
+    -fx-font-size: 40px;
+}
+#kidsMidBtn:hover{
+    -fx-underline: false;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+}
+
+
+/* Elements within bottom footer bar -----------------------------------------*/
+#bottomPanel{
+    -fx-background-color: linear-gradient(to top, #E6E6E6 45%, #FFFFFF);
+}
+
+#enterEmailTextField{
+    /*Prompt text will be displayed unless user enters text */
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);
+}
+
+#instaBtn:hover{
+    -fx-underline: false;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+}
+
+#facebookBtn:hover{
+    -fx-underline: false;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+}
+
+#twitterBtn:hover{
+    -fx-underline: false;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+}
+
+#pinterestBtn:hover{
+    -fx-underline: false;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+}
+
+#youtubeBtn:hover{
+    -fx-underline: false;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+}
+

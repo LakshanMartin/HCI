@@ -5,15 +5,17 @@
  */
 package zara;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
+import javafx.scene.Scene;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 
 /**
  *
@@ -22,26 +24,33 @@ import javafx.scene.layout.Pane;
 public class HomepageController implements Initializable 
 {
     @FXML
-    private AnchorPane AnchorPane;
-    
-    @FXML
-    private Pane topPanel, bottomPanel;
-    
-    @FXML
-    private ImageView mainLogo;
-    
-    @FXML
-    private void handleButtonAction(ActionEvent event) 
-    {
-        System.out.println("You clicked me!");
-    }
+    private AnchorPane homepage;
     
     @Override
     public void initialize(URL url, ResourceBundle rb) 
     {
-        mainLogo = new ImageView();
-        Image mainLogoIcon = new Image(getClass().getResourceAsStream("/BigZaraIcon.png"));
-        mainLogo.setImage(mainLogoIcon);
     }    
-    
+
+    @FXML
+    private void loadShoppingUI(MouseEvent event) throws IOException
+    {
+        AnchorPane shoppingUI = FXMLLoader.load(getClass().getResource("ShoppingUI.fxml"));
+        homepage.getChildren().setAll(shoppingUI);
+    }
+
+    /**
+     * Creates popup window with "Out of scope" message.
+     * @param event
+     * @throws IOException 
+     */
+    @FXML
+    private void loadScopeNotice(MouseEvent event) throws IOException
+    {
+        AnchorPane scopeNotice = FXMLLoader.load(getClass().getResource("ScopeNotice.fxml"));
+        
+        Stage stage = new Stage();
+        stage.setTitle("Out of scope notice");
+        stage.setScene(new Scene(scopeNotice, 600, 300));
+        stage.show();
+    }
 }
