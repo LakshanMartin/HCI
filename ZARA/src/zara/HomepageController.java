@@ -31,6 +31,11 @@ public class HomepageController implements Initializable
     {
     }    
 
+    /**
+     * Link to the ShoppingUI window
+     * @param event
+     * @throws IOException 
+     */
     @FXML
     private void loadShoppingUI(MouseEvent event) throws IOException
     {

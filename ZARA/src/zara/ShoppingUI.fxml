@@ -22,7 +22,7 @@
                   <Font size="20.0" />
                </font>
             </TextField>
-            <ImageView id="accountIconImg" fitHeight="35.0" fitWidth="40.0" layoutX="1740.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="accountIconImg" fx:id="accountBtn" fitHeight="35.0" fitWidth="40.0" layoutX="1740.0" layoutY="35.0" onMouseClicked="#loadScopeNotice" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Account-Icon.png" />
                </image>
@@ -32,10 +32,10 @@
                   <Image url="@../Cart-Icon.png" />
                </image>
             </ImageView>
-            <Button id="mensTopBtn" layoutX="430.0" layoutY="37.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="161.0" stylesheets="@Homepage.css" text="MEN" />
-            <Button id="womensTopBtn" layoutX="600.0" layoutY="37.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="161.0" stylesheets="@Homepage.css" text="WOMEN" />
-            <Button id="kidsTopBtn" layoutX="770.0" layoutY="37.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="161.0" stylesheets="@Homepage.css" text="KIDS" />
-            <Button id="loginBtn" layoutX="1540.0" layoutY="40.0" mnemonicParsing="false" prefHeight="39.0" stylesheets="@Homepage.css" text="Log In / Register">
+            <Button id="mensTopBtn" layoutX="430.0" layoutY="37.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="161.0" stylesheets="@Homepage.css" text="MEN" underline="true" />
+            <Button id="womensTopBtn" fx:id="womenTopBtn" layoutX="600.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" prefHeight="80.0" prefWidth="161.0" stylesheets="@Homepage.css" text="WOMEN" />
+            <Button id="kidsTopBtn" fx:id="kidsTopBtn" layoutX="770.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" prefHeight="80.0" prefWidth="161.0" stylesheets="@Homepage.css" text="KIDS" />
+            <Button id="loginBtn" fx:id="loginBtn" layoutX="1540.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" prefHeight="39.0" stylesheets="@Homepage.css" text="Log In / Register">
                <font>
                   <Font size="20.0" />
                </font>
@@ -55,16 +55,16 @@
                </font>
             </Label>
             <TextField id="enterEmailTextField" layoutX="254.0" layoutY="17.0" prefHeight="41.0" prefWidth="300.0" promptText="Enter email address" />
-            <ImageView fitHeight="48.0" fitWidth="35.0" layoutX="1810.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="helpBtn" fitHeight="48.0" fitWidth="35.0" layoutX="1810.0" layoutY="20.0" onMouseClicked="#loadScopeNotice" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Help-Icon.png" />
                </image>
             </ImageView>
-            <Button id="instaBtn" layoutX="1336.0" layoutY="25.0" mnemonicParsing="false" stylesheets="@Homepage.css" text="INSTAGRAM" />
-            <Button id="facebookBtn" layoutX="1432.0" layoutY="25.0" mnemonicParsing="false" stylesheets="@Homepage.css" text="FACEBOOK" />
-            <Button id="twitterBtn" layoutX="1522.0" layoutY="25.0" mnemonicParsing="false" stylesheets="@Homepage.css" text="TWITTER" />
-            <Button id="pinterestBtn" layoutX="1598.0" layoutY="25.0" mnemonicParsing="false" stylesheets="@Homepage.css" text="PINTEREST" />
-            <Button id="youtubeBtn" layoutX="1687.0" layoutY="25.0" mnemonicParsing="false" stylesheets="@Homepage.css" text="YOUTUBE" />
+            <Button id="instaBtn" fx:id="instaBtn" layoutX="1336.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" stylesheets="@Homepage.css" text="INSTAGRAM" />
+            <Button id="facebookBtn" fx:id="facebookBtn" layoutX="1432.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" stylesheets="@Homepage.css" text="FACEBOOK" />
+            <Button id="twitterBtn" fx:id="twitterBtn" layoutX="1522.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" stylesheets="@Homepage.css" text="TWITTER" />
+            <Button id="pinterestBtn" fx:id="pinterestBtn" layoutX="1598.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" stylesheets="@Homepage.css" text="PINTEREST" />
+            <Button id="youtubeBtn" fx:id="youtubeBtn" layoutX="1687.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" stylesheets="@Homepage.css" text="YOUTUBE" />
          </children></Pane>
    </children>
 </AnchorPane>

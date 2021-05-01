@@ -11,10 +11,13 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -25,13 +28,6 @@ public class ShoppingUIController implements Initializable
 {
     @FXML
     private AnchorPane shoppingUI;
-    
-    @FXML
-    private Pane topPanel;
-    @FXML
-    private ImageView mainLogo;
-    @FXML
-    private Pane bottomPanel;
 
     /**
      * Initializes the controller class.
@@ -49,4 +45,19 @@ public class ShoppingUIController implements Initializable
         shoppingUI.getChildren().setAll(homepage);
     }
     
+    /**
+     * Creates popup window with "Out of scope" message.
+     * @param event
+     * @throws IOException 
+     */
+    @FXML
+    private void loadScopeNotice(MouseEvent event) throws IOException
+    {
+        AnchorPane scopeNotice = FXMLLoader.load(getClass().getResource("ScopeNotice.fxml"));
+        
+        Stage stage = new Stage();
+        stage.setTitle("Out of scope notice");
+        stage.setScene(new Scene(scopeNotice, 600, 300));
+        stage.show();
+    }
 }
