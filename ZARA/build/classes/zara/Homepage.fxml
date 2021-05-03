@@ -11,7 +11,7 @@
 
 <AnchorPane id="AnchorPane" fx:id="homepage" prefHeight="1080" prefWidth="1920" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zara.HomepageController">
    <children>
-      <Pane id="topPanel" fx:id="topPanel" layoutX="46.0" layoutY="8.0" prefHeight="150.0" prefWidth="1920.0" stylesheets="@../styling.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Pane id="topPanel" fx:id="topPanel" layoutX="46.0" layoutY="8.0" prefHeight="150.0" prefWidth="1920.0" stylesheets="@Homepage.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <ImageView fx:id="mainLogo" fitHeight="126.0" fitWidth="306.0" layoutX="70.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -68,7 +68,7 @@
             <Button id="kidsMidBtn" fx:id="kidsMidBtn" layoutX="1546.0" layoutY="720.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" stylesheets="@Homepage.css" text="KIDS" />
          </children>
       </Pane>
-      <Pane id="bottomPanel" fx:id="bottomPanel" layoutX="314.0" layoutY="839.0" prefHeight="75.0" prefWidth="200.0" stylesheets="@../styling.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <Pane id="bottomPanel" fx:id="bottomPanel" layoutX="314.0" layoutY="839.0" prefHeight="75.0" prefWidth="200.0" stylesheets="@Homepage.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <Label id="newsletterLabel" layoutX="70.0" layoutY="17.0" prefHeight="41.0" prefWidth="184.0" text="JOIN OUR NEWSLETTER:">
                <font>

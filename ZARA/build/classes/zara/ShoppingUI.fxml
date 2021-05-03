@@ -3,6 +3,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -11,7 +12,7 @@
 
 <AnchorPane id="AnchorPane" fx:id="shoppingUI" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zara.ShoppingUIController">
     <children>
-      <Pane id="topPanel" fx:id="topPanel" layoutX="46.0" layoutY="8.0" prefHeight="150.0" prefWidth="1920.0" stylesheets="@../styling.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Pane id="topPanel" fx:id="topPanel" layoutX="46.0" layoutY="8.0" prefHeight="150.0" prefWidth="1920.0" stylesheets="@Homepage.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <ImageView fx:id="mainLogo" fitHeight="126.0" fitWidth="306.0" layoutX="70.0" layoutY="12.0" onMouseClicked="#loadHomepage" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -42,12 +43,16 @@
             </Button>
          </children>
       </Pane>
-      <Pane id="middlePanel" layoutX="63.0" layoutY="202.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
+      <Pane layoutY="150.0" prefHeight="90.0" prefWidth="1920.0">
          <children>
-            
-         </children>
-      </Pane>
-      <Pane id="bottomPanel" fx:id="bottomPanel" layoutX="314.0" layoutY="839.0" prefHeight="75.0" prefWidth="200.0" stylesheets="@../styling.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+            <ToolBar layoutX="130.0" layoutY="25.0" prefHeight="40.0" prefWidth="200.0">
+              <items>
+                <Button fx:id="test" mnemonicParsing="false" onMouseClicked="#test" prefHeight="26.0" prefWidth="89.0" text="Button" />
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="87.0" text="Button" />
+              </items>
+            </ToolBar>
+         </children></Pane>
+      <Pane id="bottomPanel" fx:id="bottomPanel" layoutX="314.0" layoutY="839.0" prefHeight="75.0" prefWidth="200.0" stylesheets="@Homepage.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <Label id="newsletterLabel" layoutX="70.0" layoutY="17.0" prefHeight="41.0" prefWidth="184.0" text="JOIN OUR NEWSLETTER:">
                <font>

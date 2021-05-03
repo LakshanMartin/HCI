@@ -60,4 +60,10 @@ public class ShoppingUIController implements Initializable
         stage.setScene(new Scene(scopeNotice, 600, 300));
         stage.show();
     }
+    
+    @FXML
+    private void test(MouseEvent event) throws IOException
+    {
+        loadScopeNotice(event);
+    }
 }
