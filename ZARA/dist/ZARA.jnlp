@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="ZARA.jar" size="15541339" download="eager" />
+    <jar href="ZARA.jar" size="15541427" download="eager" />
   </resources>
   <jfx:javafx-desc  width="800" height="600" main-class="zara.ZARA"  name="ZARA" />
   <update check="always"/>

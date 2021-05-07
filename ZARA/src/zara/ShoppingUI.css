@@ -26,12 +26,25 @@ and open the template in the editor.
     -fx-underline: true;
 }
 
-/* Elements in the Sub-heading panel -----------------------------------------*/
-#homepageNavImg:hover{
+.button:pressed{
+   -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+}
+
+/* Main Logo -----------------------------------------------------------------*/
+#mainLogoBtn:hover{
     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
 }
 
-#homepageNavImg:active{
+#mainLogoBtn:pressed{
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.9), 10, 0, 0, 0);
+}
+
+/* Elements in the Sub-heading panel -----------------------------------------*/
+#homepageNavBtn:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+}
+
+#homepageNavBtn:pressed{
     -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.9), 10, 0, 0, 0);
 }
 

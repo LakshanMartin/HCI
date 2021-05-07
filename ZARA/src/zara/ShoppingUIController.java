@@ -12,8 +12,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -27,9 +25,6 @@ public class ShoppingUIController implements Initializable
 {
     @FXML
     private AnchorPane shoppingUI;
-    
-    @FXML
-    private ImageView homepageCrumb;
 
     /**
      * Initializes the controller class.
@@ -48,6 +43,18 @@ public class ShoppingUIController implements Initializable
     }
     
     /**
+     * Reloads ShoppingUI window
+     * @param event
+     * @throws IOException 
+     */
+    @FXML
+    private void loadShoppingUI(MouseEvent event) throws IOException
+    {
+        AnchorPane reloadUI = FXMLLoader.load(getClass().getResource("ShoppingUI.fxml"));
+        shoppingUI.getChildren().setAll(reloadUI);
+    }
+    
+    /**
      * Creates popup window with "Out of scope" message.
      * @param event
      * @throws IOException 
@@ -61,15 +68,5 @@ public class ShoppingUIController implements Initializable
         stage.setTitle("Out of scope notice");
         stage.setScene(new Scene(scopeNotice, 600, 300));
         stage.show();
-    }
-    
-    @FXML
-    private void navCrumbClicked(MouseEvent event) throws IOException
-    {
-        Image crumbClicked = new Image(getClass().getResourceAsStream("/Homepage-NavPressed.png")); 
-        homepageCrumb = new ImageView();
-        homepageCrumb.setImage(crumbClicked);
-                
-        //loadHomepage(event);
     }
 }

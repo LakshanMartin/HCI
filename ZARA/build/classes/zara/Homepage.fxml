@@ -18,46 +18,51 @@
                   <Image url="@../BigZaraIcon.png" />
                </image>
             </ImageView>
-            <TextField id="searchBar" layoutX="1548.0" layoutY="90.0" prefHeight="42.0" prefWidth="292.0" promptText="Search" stylesheets="@Homepage.css">
+            <TextField id="searchBar" layoutX="1580.0" layoutY="90.0" prefHeight="42.0" prefWidth="260.0" promptText="Search" stylesheets="@Homepage.css">
                <font>
                   <Font size="20.0" />
                </font>
             </TextField>
-            <ImageView id="accountIconImg" fx:id="accountIconBtn" fitHeight="35.0" fitWidth="40.0" layoutX="1740.0" layoutY="35.0" onMouseClicked="#loadScopeNotice" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Account-Icon.png" />
-               </image>
-            </ImageView>
-            <ImageView id="cartIconImg" fitHeight="35.0" fitWidth="40.0" layoutX="1810.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Cart-Icon.png" />
-               </image>
-            </ImageView>
             <Button id="mensTopBtn" layoutX="430.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#loadShoppingUI" prefHeight="80.0" prefWidth="161.0" stylesheets="@Homepage.css" text="MEN" />
             <Button id="womensTopBtn" fx:id="womenTopBtn" layoutX="600.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" prefHeight="80.0" prefWidth="161.0" stylesheets="@Homepage.css" text="WOMEN" />
             <Button id="kidsTopBtn" fx:id="kidsTopBtn" layoutX="770.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" prefHeight="80.0" prefWidth="161.0" stylesheets="@Homepage.css" text="KIDS" />
-            <Button id="loginBtn" fx:id="accountBtn" layoutX="1540.0" layoutY="40.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" prefHeight="39.0" stylesheets="@Homepage.css" text="Log In / Register">
+            <Button id="loginBtn" fx:id="accountBtn" alignment="BOTTOM_LEFT" contentDisplay="RIGHT" layoutX="1570.0" layoutY="28.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" prefHeight="39.0" stylesheets="@Homepage.css" text="Log In / Register">
                <font>
                   <Font size="20.0" />
                </font>
+               <graphic>
+                  <ImageView id="accountIconImg" fx:id="accountIconBtn" fitHeight="35.0" fitWidth="24.0" onMouseClicked="#loadScopeNotice" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Account-Icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
             </Button>
+            <Button fx:id="cartImgBtn" layoutX="1783.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" stylesheets="@Homepage.css">
+               <graphic>
+                  <ImageView id="cartIconImg" fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Cart-Icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
          </children>
       </Pane>
       <Pane id="middlePanel" layoutX="63.0" layoutY="202.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
          <children>
-            <ImageView id="mensImg" fx:id="mensImg" fitHeight="600.0" fitWidth="400.0" layoutX="100.0" layoutY="100.0" onMouseClicked="#loadShoppingUI" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="mensImg" fx:id="mensImg" fitHeight="600.0" fitWidth="400.0" layoutX="100.0" layoutY="100.0" onMousePressed="#loadShoppingUI" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Homepage-Mens.png" />
                </image>
             </ImageView>
-            <ImageView id="womensImg" fx:id="womenImgBtn" fitHeight="600.0" fitWidth="400.0" layoutX="775.0" layoutY="100.0" onMouseClicked="#loadScopeNotice" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Homepage-Women.png" />
-               </image>
-            </ImageView>
-            <ImageView id="kidsImg" fx:id="kidsImgBtn" fitHeight="600.0" fitWidth="400.0" layoutX="1420.0" layoutY="100.0" onMouseClicked="#loadScopeNotice" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="kidsImg" fx:id="kidsImg" fitHeight="600.0" fitWidth="400.0" layoutX="1420.0" layoutY="100.0" onMousePressed="#loadScopeNotice" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Homepage-Kids.jpg" />
+               </image>
+            </ImageView>
+            <ImageView id="womensImg" fx:id="womensImg" fitHeight="600.0" fitWidth="400.0" layoutX="775.0" layoutY="100.0" onMousePressed="#loadScopeNotice" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Homepage-Women.png" />
                </image>
             </ImageView>
             <Button id="mensMidBtn" layoutX="220.0" layoutY="720.0" mnemonicParsing="false" onMouseClicked="#loadShoppingUI" prefHeight="80.0" prefWidth="160.0" stylesheets="@Homepage.css" text="MEN">
@@ -77,16 +82,20 @@
                </font>
             </Label>
             <TextField id="enterEmailTextField" layoutX="254.0" layoutY="17.0" prefHeight="41.0" prefWidth="300.0" promptText="Enter email address" />
-            <ImageView fx:id="helpBtn" fitHeight="48.0" fitWidth="35.0" layoutX="1810.0" layoutY="20.0" onMouseClicked="#loadScopeNotice" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Help-Icon.png" />
-               </image>
-            </ImageView>
             <Button id="instaBtn" fx:id="instaBtn" layoutX="1336.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" stylesheets="@Homepage.css" text="INSTAGRAM" />
             <Button id="facebookBtn" fx:id="facebookBtn" layoutX="1432.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" stylesheets="@Homepage.css" text="FACEBOOK" />
             <Button id="twitterBtn" fx:id="twitterBtn" layoutX="1522.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" stylesheets="@Homepage.css" text="TWITTER" />
             <Button id="pinterestBtn" fx:id="pinterestBtn" layoutX="1598.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" stylesheets="@Homepage.css" text="PINTEREST" />
             <Button id="youtubeBtn" fx:id="youtubeBtn" layoutX="1687.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" stylesheets="@Homepage.css" text="YOUTUBE" />
+            <Button fx:id="helpImgBtn" layoutX="1784.0" layoutY="15.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice">
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Help-Icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
          </children></Pane>
    </children>
 </AnchorPane>
