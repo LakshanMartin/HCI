@@ -45,19 +45,29 @@
             </Button>
          </children>
       </Pane>
-      <Pane id="toolBarPanel" layoutY="150.0" prefHeight="90.0" prefWidth="1920.0">
+      <Pane id="toolBarPanel" layoutY="150.0" prefHeight="90.0" prefWidth="1920.0" style="-fx-background-color: white;" stylesheets="@ShoppingUI.css">
          <children>
-            <ToolBar id="productToolbar" layoutX="50.0" prefHeight="90.0" prefWidth="667.0" stylesheets="@ShoppingUI.css">
+            <ToolBar id="productToolbar" layoutX="627.0" prefHeight="90.0" prefWidth="667.0" stylesheets="@ShoppingUI.css">
               <items>
-                <Button id="allClothingBtn" fx:id="test" mnemonicParsing="false" onMouseClicked="#test" prefHeight="40.0" prefWidth="131.0" text="ALL CLOTHING" underline="true" />
+                <Button id="allClothingBtn" fx:id="test" mnemonicParsing="false" prefHeight="40.0" prefWidth="131.0" text="ALL CLOTHING" underline="true" />
                   <Button id="topsBtn" mnemonicParsing="false" prefHeight="40.0" prefWidth="60.0" text="TOPS" />
                   <Button id="bottomsBtn" mnemonicParsing="false" prefHeight="40.0" prefWidth="95.0" text="BOTTOMS" />
                   <Button id="accessoriesBtn" mnemonicParsing="false" prefHeight="40.0" prefWidth="126.0" text="ACCESSORIES" />
                   <Button id="saleBtn" alignment="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="64.0" text="SALE" />
               </items>
             </ToolBar>
+            <ImageView id="homepageNavImg" fx:id="homepageCrumb" fitHeight="40.0" fitWidth="130.0" layoutX="63.0" layoutY="26.0" onMousePressed="#navCrumbClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Homepage-Nav.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="130.0" layoutX="193.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Shopping-Nav.png" />
+               </image>
+            </ImageView>
          </children></Pane>
-      <Pane id="mainPanel" layoutY="240.0" prefHeight="761.0" prefWidth="1920.0" AnchorPane.bottomAnchor="75.0">
+      <Pane id="mainPanel" layoutY="240.0" prefHeight="765.0" prefWidth="1920.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="75.0">
          <children>
             <Accordion id="filtersAccordion" layoutX="92.0" layoutY="60.0" stylesheets="@ShoppingUI.css">
               <panes>

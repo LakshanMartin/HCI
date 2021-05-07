@@ -16,7 +16,8 @@
             <ImageView fx:id="mainLogo" fitHeight="126.0" fitWidth="306.0" layoutX="70.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../BigZaraIcon.png" />
-               </image></ImageView>
+               </image>
+            </ImageView>
             <TextField id="searchBar" layoutX="1548.0" layoutY="90.0" prefHeight="42.0" prefWidth="292.0" promptText="Search" stylesheets="@Homepage.css">
                <font>
                   <Font size="20.0" />

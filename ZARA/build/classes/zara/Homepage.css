@@ -18,7 +18,7 @@ and open the template in the editor.
 }
 
 .image-view:hover{
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+   -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
 }
 
 /* Elements within top navigation bar ----------------------------------------*/
