@@ -3,6 +3,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -38,31 +39,29 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="cartImgBtn" layoutX="1783.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" stylesheets="@Homepage.css">
+            <Button id="cartImgBtn" fx:id="cartImgBtn" layoutX="1789.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" stylesheets="@Homepage.css">
                <graphic>
                   <ImageView id="cartIconImg" fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../Cart-Icon.png" />
                      </image>
                   </ImageView>
-               </graphic></Button>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Shopping Cart" />
+               </tooltip></Button>
          </children>
       </Pane>
       <Pane id="middlePanel" layoutX="63.0" layoutY="202.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
          <children>
-            <ImageView id="mensImg" fx:id="mensImg" fitHeight="600.0" fitWidth="400.0" layoutX="100.0" layoutY="100.0" onMousePressed="#loadShoppingUI" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="mensImg" fitHeight="600.0" fitWidth="400.0" layoutX="100.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Homepage-Mens.png" />
                </image>
             </ImageView>
-            <ImageView id="kidsImg" fx:id="kidsImg" fitHeight="600.0" fitWidth="400.0" layoutX="1420.0" layoutY="100.0" onMousePressed="#loadScopeNotice" pickOnBounds="true" preserveRatio="true">
+            <ImageView id="kidsImg" fitHeight="600.0" fitWidth="400.0" layoutX="1420.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Homepage-Kids.jpg" />
-               </image>
-            </ImageView>
-            <ImageView id="womensImg" fx:id="womensImg" fitHeight="600.0" fitWidth="400.0" layoutX="775.0" layoutY="100.0" onMousePressed="#loadScopeNotice" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Homepage-Women.png" />
                </image>
             </ImageView>
             <Button id="mensMidBtn" layoutX="220.0" layoutY="720.0" mnemonicParsing="false" onMouseClicked="#loadShoppingUI" prefHeight="80.0" prefWidth="160.0" stylesheets="@Homepage.css" text="MEN">
@@ -72,6 +71,26 @@
             </Button>
             <Button id="womensMidBtn" fx:id="womenMidBtn" layoutX="868.0" layoutY="720.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" stylesheets="@Homepage.css" text="WOMEN" />
             <Button id="kidsMidBtn" fx:id="kidsMidBtn" layoutX="1546.0" layoutY="720.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" stylesheets="@Homepage.css" text="KIDS" />
+            <Button fx:id="mensImgBtn" layoutX="100.0" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#loadShoppingUI" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: transparent;">
+               <tooltip>
+                  <Tooltip text="Mens Collection" />
+               </tooltip>
+            </Button>
+            <Button fx:id="kidsImgBtn" layoutX="1420.0" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: transparent;">
+               <tooltip>
+                  <Tooltip text="Kids Collection" />
+               </tooltip>
+            </Button>
+            <ImageView id="womensImg" fitHeight="600.0" fitWidth="400.0" layoutX="775.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Homepage-Women.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="womensImgBtn" layoutX="775.0" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: transparent;">
+               <tooltip>
+                  <Tooltip text="Womens Collection" />
+               </tooltip>
+            </Button>
          </children>
       </Pane>
       <Pane id="bottomPanel" fx:id="bottomPanel" layoutX="314.0" layoutY="839.0" prefHeight="75.0" prefWidth="200.0" stylesheets="@Homepage.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
@@ -95,6 +114,9 @@
                      </image>
                   </ImageView>
                </graphic>
+               <tooltip>
+                  <Tooltip text="Help &amp; Store Info" />
+               </tooltip>
             </Button>
          </children></Pane>
    </children>

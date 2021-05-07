@@ -52,7 +52,6 @@ and open the template in the editor.
 /*Make titled panes transparent*/
 #mainPanel .accordion .titled-pane > *.content{
     -fx-border-color: transparent;
-    
 }
 
 /*Make accordion panels transparent*/
@@ -65,4 +64,16 @@ and open the template in the editor.
 /*Remove default arrow from titled pane*/
 #mainPanel .accordion .title > .arrow-button{
     visibility: hidden;
+}
+
+#gridPane > .button:hover{
+    -fx-underline: false;
+}
+
+.scroll-bar{
+    -fx-background-color: white;
+}
+
+.scroll-bar:vertical .track{
+    -fx-background-color: white;
 }

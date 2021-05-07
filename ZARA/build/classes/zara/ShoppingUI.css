@@ -66,3 +66,11 @@ and open the template in the editor.
 #mainPanel .accordion .title > .arrow-button{
     visibility: hidden;
 }
+
+.scroll-bar{
+    -fx-background-color: white;
+}
+
+.scroll-bar:vertical .track{
+    -fx-background-color: white;
+}

@@ -28,6 +28,17 @@ and open the template in the editor.
 
 #topPanel .button{
     -fx-font-family: Verdana;
+}
+
+#mensTopBtn{
+    -fx-font-size: 30px;
+}
+
+#womensTopBtn{
+    -fx-font-size: 30px;
+}
+
+#kidsTopBtn{
     -fx-font-size: 30px;
 }
 
@@ -56,6 +67,10 @@ and open the template in the editor.
 
 #cartImgBtn:pressed{
     -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.9), 10, 0, 0, 0);
+}
+
+#cartImgBtn{
+    -fx-font-size: 13px;
 }
 
 /* Elements within main section ----------------------------------------------*/
