@@ -1,0 +1,64 @@
+/*
+CSS styling for the Top and Bottom fixed panels that are present across all
+three windows designed.
+*/
+/* 
+    Created on : 08/05/2021, 9:51:03 PM
+    Author     : Lakshan Martin
+*/
+
+/* GENERAL CLASS STYLING -----------------------------------------------------*/
+.button{
+    -fx-background-color: transparent;
+}
+
+.button:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+}
+
+.button:pressed{
+   -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.9), 10, 0, 0, 0);
+}
+
+.text-field{
+    /*Prompt text will be displayed unless user enters text */
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);
+}
+
+.tooltip{
+    -fx-font-family: default;
+    -fx-font-size: 11px;
+}
+
+/* TOP PANEL ELEMENTS---------------------------------------------------------*/
+#topPanel{
+    -fx-background-color: linear-gradient(to bottom, #E6E6E6 60%, #FFFFFF);
+}
+
+#topPanel .button{
+    -fx-font-family: Verdana;
+    -fx-font-size: 30px;
+}
+
+#topPanel .button:hover{
+    -fx-underline: true;
+}
+
+#topPanel #loginBtn{
+    -fx-font-size: 20px;
+}
+
+#topPanel #loginBtn:hover{
+    -fx-underline: false;
+}
+
+
+#topPanel #cartImgBtn{
+    -fx-font-size: 13px;
+}
+
+/* BOTTOM PANEL ELEMENTS -----------------------------------------------------*/
+#bottomPanel{
+    -fx-background-color: linear-gradient(to top, #E6E6E6 45%, #FFFFFF);
+}
+

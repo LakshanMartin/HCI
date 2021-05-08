@@ -9,6 +9,10 @@ and open the template in the editor.
 */
 
 /* Class Styling -------------------------------------------------------------*/
+.button{
+    -fx-background-color: transparent;
+}
+
 .tool-bar{
     -fx-background-color: transparent, transparent, transparent, transparent;
 }
@@ -18,16 +22,17 @@ and open the template in the editor.
     -fx-font-size: 15px;
 }
 
-.button{
-    -fx-background-color: transparent;
-}
-
-.button:hover{
+.tool-bar .button:hover{
     -fx-underline: true;
 }
 
-.button:pressed{
-   -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+.tool-bar .button:pressed{
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+}
+
+.tooltip{
+    -fx-font-family: default;
+    -fx-font-size: 11px;
 }
 
 /* Main Logo -----------------------------------------------------------------*/
@@ -66,8 +71,16 @@ and open the template in the editor.
     visibility: hidden;
 }
 
+#gridPane > .button{
+    -fx-font-size: 15px;
+}
+
 #gridPane > .button:hover{
-    -fx-underline: false;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+}
+
+#gridPane > .button:pressed{
+    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.9), 10, 0, 0, 0);
 }
 
 .scroll-bar{
