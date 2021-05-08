@@ -11,6 +11,11 @@ and open the template in the editor.
 /* Class Styling -------------------------------------------------------------*/
 .button{
     -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.ImageView{
+    -fx-cursor: hand;
 }
 
 .tool-bar{
@@ -81,6 +86,14 @@ and open the template in the editor.
 
 #gridPane > .button:pressed{
     -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.9), 10, 0, 0, 0);
+}
+
+#originalPriceBtn .text{
+    -fx-strikethrough: true;
+}
+
+#salePriceBtn .text{
+    -fx-text-fill: red;
 }
 
 .scroll-bar{

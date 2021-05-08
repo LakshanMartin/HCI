@@ -19,7 +19,7 @@
                   <Image url="@../BigZaraIcon.png" />
                </image>
             </ImageView>
-            <TextField id="searchBar" layoutX="1580.0" layoutY="90.0" prefHeight="42.0" prefWidth="260.0" promptText="Search">
+            <TextField id="searchBar" focusTraversable="false" layoutX="1580.0" layoutY="90.0" prefHeight="42.0" prefWidth="260.0" promptText="Search">
                <font>
                   <Font size="20.0" />
                </font>
@@ -100,7 +100,7 @@
                   <Font size="15.0" />
                </font>
             </Label>
-            <TextField id="enterEmailTextField" layoutX="254.0" layoutY="17.0" prefHeight="41.0" prefWidth="300.0" promptText="Enter email address" />
+            <TextField id="enterEmailTextField" focusTraversable="false" layoutX="254.0" layoutY="17.0" prefHeight="41.0" prefWidth="300.0" promptText="Enter email address" />
             <Button id="instaBtn" fx:id="instaBtn" layoutX="1336.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" text="INSTAGRAM" />
             <Button id="facebookBtn" fx:id="facebookBtn" layoutX="1432.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" text="FACEBOOK" />
             <Button id="twitterBtn" fx:id="twitterBtn" layoutX="1522.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" text="TWITTER" />

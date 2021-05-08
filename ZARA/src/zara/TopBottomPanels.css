@@ -10,6 +10,7 @@ three windows designed.
 /* GENERAL CLASS STYLING -----------------------------------------------------*/
 .button{
     -fx-background-color: transparent;
+    -fx-cursor: hand;
 }
 
 .button:hover{
@@ -18,11 +19,6 @@ three windows designed.
 
 .button:pressed{
    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.9), 10, 0, 0, 0);
-}
-
-.text-field{
-    /*Prompt text will be displayed unless user enters text */
-    -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);
 }
 
 .tooltip{

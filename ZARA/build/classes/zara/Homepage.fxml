@@ -12,22 +12,22 @@
 
 <AnchorPane id="AnchorPane" fx:id="homepage" prefHeight="1080" prefWidth="1920" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zara.HomepageController">
    <children>
-      <Pane id="topPanel" fx:id="topPanel" layoutX="46.0" layoutY="8.0" prefHeight="150.0" prefWidth="1920.0" stylesheets="@Homepage.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Pane id="topPanel" fx:id="topPanel" layoutX="46.0" layoutY="8.0" prefHeight="150.0" prefWidth="1920.0" stylesheets="@TopBottomPanels.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <ImageView fx:id="mainLogo" fitHeight="126.0" fitWidth="306.0" layoutX="70.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../BigZaraIcon.png" />
                </image>
             </ImageView>
-            <TextField id="searchBar" layoutX="1580.0" layoutY="90.0" prefHeight="42.0" prefWidth="260.0" promptText="Search" stylesheets="@Homepage.css">
+            <TextField id="searchBar" layoutX="1580.0" layoutY="90.0" prefHeight="42.0" prefWidth="260.0" promptText="Search">
                <font>
                   <Font size="20.0" />
                </font>
             </TextField>
-            <Button id="mensTopBtn" layoutX="430.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#loadShoppingUI" prefHeight="80.0" prefWidth="161.0" stylesheets="@Homepage.css" text="MEN" />
-            <Button id="womensTopBtn" fx:id="womenTopBtn" layoutX="600.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" prefHeight="80.0" prefWidth="161.0" stylesheets="@Homepage.css" text="WOMEN" />
-            <Button id="kidsTopBtn" fx:id="kidsTopBtn" layoutX="770.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" prefHeight="80.0" prefWidth="161.0" stylesheets="@Homepage.css" text="KIDS" />
-            <Button id="loginBtn" fx:id="accountBtn" alignment="BOTTOM_LEFT" contentDisplay="RIGHT" layoutX="1570.0" layoutY="28.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" prefHeight="39.0" stylesheets="@Homepage.css" text="Log In / Register">
+            <Button id="mensTopBtn" layoutX="430.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#loadShoppingUI" prefHeight="80.0" prefWidth="161.0" text="MEN" />
+            <Button id="womensTopBtn" fx:id="womenTopBtn" layoutX="600.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" prefHeight="80.0" prefWidth="161.0" text="WOMEN" />
+            <Button id="kidsTopBtn" fx:id="kidsTopBtn" layoutX="770.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" prefHeight="80.0" prefWidth="161.0" text="KIDS" />
+            <Button id="loginBtn" fx:id="accountBtn" alignment="BOTTOM_LEFT" contentDisplay="RIGHT" layoutX="1570.0" layoutY="28.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" prefHeight="39.0" text="Log In / Register">
                <font>
                   <Font size="20.0" />
                </font>
@@ -52,7 +52,7 @@
                </tooltip></Button>
          </children>
       </Pane>
-      <Pane id="middlePanel" layoutX="63.0" layoutY="202.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
+      <Pane id="middlePanel" layoutX="63.0" layoutY="202.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" stylesheets="@Homepage.css" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
          <children>
             <ImageView id="mensImg" fitHeight="600.0" fitWidth="400.0" layoutX="100.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -64,13 +64,13 @@
                   <Image url="@../Homepage-Kids.jpg" />
                </image>
             </ImageView>
-            <Button id="mensMidBtn" layoutX="220.0" layoutY="720.0" mnemonicParsing="false" onMouseClicked="#loadShoppingUI" prefHeight="80.0" prefWidth="160.0" stylesheets="@Homepage.css" text="MEN">
+            <Button id="mensMidBtn" layoutX="220.0" layoutY="720.0" mnemonicParsing="false" onMouseClicked="#loadShoppingUI" prefHeight="80.0" prefWidth="160.0" text="MEN">
                <font>
                   <Font size="40.0" />
                </font>
             </Button>
-            <Button id="womensMidBtn" fx:id="womenMidBtn" layoutX="868.0" layoutY="720.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" stylesheets="@Homepage.css" text="WOMEN" />
-            <Button id="kidsMidBtn" fx:id="kidsMidBtn" layoutX="1546.0" layoutY="720.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" stylesheets="@Homepage.css" text="KIDS" />
+            <Button id="womensMidBtn" fx:id="womenMidBtn" layoutX="868.0" layoutY="720.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" text="WOMEN" />
+            <Button id="kidsMidBtn" fx:id="kidsMidBtn" layoutX="1546.0" layoutY="720.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" text="KIDS" />
             <Button fx:id="mensImgBtn" layoutX="100.0" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#loadShoppingUI" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: transparent;">
                <tooltip>
                   <Tooltip text="Mens Collection" />
@@ -93,7 +93,7 @@
             </Button>
          </children>
       </Pane>
-      <Pane id="bottomPanel" fx:id="bottomPanel" layoutX="314.0" layoutY="839.0" prefHeight="75.0" prefWidth="200.0" stylesheets="@Homepage.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <Pane id="bottomPanel" fx:id="bottomPanel" layoutX="314.0" layoutY="839.0" prefHeight="75.0" prefWidth="200.0" stylesheets="@TopBottomPanels.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
             <Label id="newsletterLabel" layoutX="70.0" layoutY="17.0" prefHeight="41.0" prefWidth="184.0" text="JOIN OUR NEWSLETTER:">
                <font>
@@ -101,11 +101,11 @@
                </font>
             </Label>
             <TextField id="enterEmailTextField" layoutX="254.0" layoutY="17.0" prefHeight="41.0" prefWidth="300.0" promptText="Enter email address" />
-            <Button id="instaBtn" fx:id="instaBtn" layoutX="1336.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" stylesheets="@Homepage.css" text="INSTAGRAM" />
-            <Button id="facebookBtn" fx:id="facebookBtn" layoutX="1432.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" stylesheets="@Homepage.css" text="FACEBOOK" />
-            <Button id="twitterBtn" fx:id="twitterBtn" layoutX="1522.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" stylesheets="@Homepage.css" text="TWITTER" />
-            <Button id="pinterestBtn" fx:id="pinterestBtn" layoutX="1598.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" stylesheets="@Homepage.css" text="PINTEREST" />
-            <Button id="youtubeBtn" fx:id="youtubeBtn" layoutX="1687.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" stylesheets="@Homepage.css" text="YOUTUBE" />
+            <Button id="instaBtn" fx:id="instaBtn" layoutX="1336.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" text="INSTAGRAM" />
+            <Button id="facebookBtn" fx:id="facebookBtn" layoutX="1432.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" text="FACEBOOK" />
+            <Button id="twitterBtn" fx:id="twitterBtn" layoutX="1522.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" text="TWITTER" />
+            <Button id="pinterestBtn" fx:id="pinterestBtn" layoutX="1598.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" text="PINTEREST" />
+            <Button id="youtubeBtn" fx:id="youtubeBtn" layoutX="1687.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" text="YOUTUBE" />
             <Button fx:id="helpImgBtn" layoutX="1784.0" layoutY="15.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice">
                <graphic>
                   <ImageView fitHeight="48.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">

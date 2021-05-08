@@ -11,99 +11,21 @@ and open the template in the editor.
 /* Class styling -------------------------------------------------------------*/
 .button{
     -fx-background-color: transparent;
+    -fx-font-family: Verdana;
+    -fx-font-size: 40px;
+    -fx-cursor: hand;
 }
 
 .button:hover{
-    -fx-underline: true;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
 }
 
 .button:pressed{
-   -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
-}
-
-/* Elements within top navigation bar ----------------------------------------*/
-#topPanel{
-    -fx-background-color: linear-gradient(to bottom, #E6E6E6 60%, #FFFFFF);
-}
-
-#topPanel .button{
-    -fx-font-family: Verdana;
-}
-
-#mensTopBtn{
-    -fx-font-size: 30px;
-}
-
-#womensTopBtn{
-    -fx-font-size: 30px;
-}
-
-#kidsTopBtn{
-    -fx-font-size: 30px;
-}
-
-#topPanel #loginBtn{
-    -fx-font-size: 20px;
-}
-
-#loginBtn:hover{
-    -fx-underline: false;
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
-}
-
-#loginBtn:pressed{
     -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.9), 10, 0, 0, 0);
 }
 
-#searchBar{
-    /*Prompt text will be displayed unless user enters text */
-    -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);
-}
-
-#cartImgBtn:hover{
-    -fx-underline: false;
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
-}
-
-#cartImgBtn:pressed{
-    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.9), 10, 0, 0, 0);
-}
-
-#cartImgBtn{
-    -fx-font-size: 13px;
-}
-
-/* Elements within main section ----------------------------------------------*/
-#middlePanel .button{
-    -fx-font-family: Verdana;
-    -fx-font-size: 40px;
-}
-
-#middlePanel .button:hover{
-    -fx-underline: false;
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
-}
-
-#middlePanel .button:pressed{
-    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.9), 10, 0, 0, 0);
-}
-
-/* Elements within bottom footer bar -----------------------------------------*/
-#bottomPanel{
-    -fx-background-color: linear-gradient(to top, #E6E6E6 45%, #FFFFFF);
-}
-
-#bottomPanel .button:hover{
-    -fx-underline: false;
-    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
-}
-
-#bottomPanel .button:pressed{
-    -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.9), 10, 0, 0, 0);
-}
-
-#enterEmailTextField{
-    /*Prompt text will be displayed unless user enters text */
-    -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);
+.tooltip{
+    -fx-font-family: default;
+    -fx-font-size: 11px;
 }
 
