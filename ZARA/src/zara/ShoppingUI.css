@@ -37,6 +37,7 @@ and open the template in the editor.
 
 .tooltip{
     -fx-font-family: default;
+    -fx-font-weight: normal;
     -fx-font-size: 11px;
 }
 
