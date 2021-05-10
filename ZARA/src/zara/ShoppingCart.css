@@ -37,6 +37,18 @@
     -fx-font-weight: normal;
 }
 
+.scroll-bar{
+    -fx-background-color: white;
+}
+
+.scroll-bar:vertical .track{
+    -fx-background-color: white;
+}
+
+.scroll-bar:vertical .thumb{
+    -fx-background-color: #E6E6E6;
+}
+
 .button{
     -fx-background-color: transparent;
     -fx-cursor: hand;
@@ -72,4 +84,25 @@
 #checkoutBtn:pressed{
     -fx-background-color: #787878;
     -fx-text-fill: white;
+}
+
+#gridPane > .button{
+    -fx-font-size: 16px;
+}
+
+#gridPane > .button:hover{
+    -fx-underline: true;
+}
+
+#gridPane > .button:pressed{
+    -fx-underline: false;
+}
+
+#qtyBtn > .button{
+    -fx-border-color: grey;
+    -fx-opacity: 0.5;
+}
+
+#qtyBtn > #qtyTxtField{
+    -fx-background-radius: 0;
 }
