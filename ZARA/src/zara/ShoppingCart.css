@@ -1,0 +1,45 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+/* Class Styling -------------------------------------------------------------*/
+.toggle-button{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-border-color: grey;
+}
+
+.toggle-button:hover{
+    -fx-background-color: grey, white;
+    -fx-background-insets: 0, 0 0 0 10;
+}
+
+.toggle-button:selected{
+    -fx-background-color: grey, white;
+    -fx-background-insets: 0, 0 0 0 10;
+}
+
+.tooltip{
+    -fx-font-family: default;
+    -fx-font-weight: normal;
+    -fx-font-size: 11px;
+}
+
+.hyperlink{
+    -fx-text-fill: black;
+}
+
+.hyperlink:hover{
+    -fx-font-weight: bold;
+}
+
+.hyperlink:pressed{
+    -fx-font-weight: normal;
+}
+
+.button{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+/* Elements in Main Section --------------------------------------------------*/

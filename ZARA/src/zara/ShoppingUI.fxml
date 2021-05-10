@@ -79,7 +79,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="cartImgBtn" layoutX="1789.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" stylesheets="@TopBottomPanels.css">
+            <Button fx:id="cartImgBtn" layoutX="1789.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#loadShoppingCart" stylesheets="@TopBottomPanels.css">
                <graphic>
                   <ImageView id="cartIconImg" fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
                      <image>

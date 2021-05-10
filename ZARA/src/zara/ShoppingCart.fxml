@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="shoppingCart" prefHeight="1080.0" prefWidth="1920.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zara.ShoppingCartController">
+    <children>  
+      <Pane id="topPanel" fx:id="topPanel" layoutX="46.0" layoutY="8.0" prefHeight="150.0" prefWidth="1920.0" stylesheets="@TopBottomPanels.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button id="mainLogoBtn" fx:id="mainLogoBtn" layoutX="50.0" layoutY="2.0" mnemonicParsing="false" onMouseClicked="#loadHomepage" stylesheets="@ShoppingUI.css">
+               <graphic>
+                  <ImageView fitHeight="126.0" fitWidth="306.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../BigZaraIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <TextField id="searchBar" focusTraversable="false" layoutX="1580.0" layoutY="90.0" prefHeight="42.0" prefWidth="260.0" promptText="Search" stylesheets="@TopBottomPanels.css">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Button id="mensTopBtn" fx:id="mensTopBtn" layoutX="430.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#loadShoppingUI" prefHeight="80.0" prefWidth="161.0" stylesheets="@TopBottomPanels.css" text="MEN" underline="true" />
+            <Button id="womensTopBtn" fx:id="womenTopBtn" layoutX="600.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" prefHeight="80.0" prefWidth="161.0" stylesheets="@TopBottomPanels.css" text="WOMEN" />
+            <Button id="kidsTopBtn" fx:id="kidsTopBtn" layoutX="770.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" prefHeight="80.0" prefWidth="161.0" stylesheets="@TopBottomPanels.css" text="KIDS" />
+            <Button id="loginBtn" fx:id="accountBtn" alignment="BOTTOM_LEFT" contentDisplay="RIGHT" layoutX="1570.0" layoutY="28.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" prefHeight="39.0" stylesheets="@TopBottomPanels.css" text="Log In / Register">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView id="accountIconImg" fx:id="accountIconBtn" fitHeight="35.0" fitWidth="24.0" onMouseClicked="#loadScopeNotice" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Account-Icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="cartImgBtn" layoutX="1789.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#loadShoppingCart" stylesheets="@TopBottomPanels.css">
+               <graphic>
+                  <ImageView id="cartIconImg" fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Cart-Icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Shopping Cart" />
+               </tooltip></Button>
+         </children>
+      </Pane>  
+      <Pane id="toolBarPanel" layoutY="150.0" prefHeight="90.0" prefWidth="1920.0" style="-fx-background-color: white;" stylesheets="@ShoppingUI.css">
+         <children>
+            <ImageView fitHeight="43.0" fitWidth="161.0" layoutX="193.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Cart-Nav.png" />
+               </image>
+            </ImageView>
+            <Button id="homepageNavBtn" fx:id="homepageCrumb" layoutX="66.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#loadHomepage" stylesheets="@ShoppingUI.css">
+               <graphic>
+                  <ImageView id="homepageNavImg" fitHeight="40.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Homepage-Nav.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="803.0" layoutY="20.0" text="SHOPPING BAG">
+               <font>
+                  <Font size="41.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane id="mainPanel" layoutY="240.0" prefHeight="765.0" prefWidth="1924.0" style="-fx-background-color: white;" stylesheets="@ShoppingCart.css">
+         <children>
+            <Pane layoutX="1135.0" layoutY="16.0" prefHeight="731.0" prefWidth="708.0">
+               <children>
+                  <Button layoutX="258.0" layoutY="292.0" mnemonicParsing="false" />
+                  <ToggleButton contentDisplay="BOTTOM" layoutX="17.0" layoutY="24.0" mnemonicParsing="false" prefHeight="132.0" prefWidth="673.0" style="-fx-font-weight: bold; -fx-font-size: 18px;" text="STANDARD DELIVERY - $25                                                       ">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="DeliveryOptions" />
+                     </toggleGroup>
+                     <graphic>
+                        <Label style="-fx-font-weight: normal;" text="4 - 7 business days to metro locations.                                               &#10;7 - 10 business days to regional locations." />
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Click to select option" />
+                     </tooltip>
+                  </ToggleButton>
+                  <ToggleButton contentDisplay="BOTTOM" layoutX="17.0" layoutY="160.0" mnemonicParsing="false" prefHeight="132.0" prefWidth="673.0" style="-fx-font-weight: bold; -fx-font-size: 18px;" text="CLICK &amp; COLLECT                                                                       " toggleGroup="$DeliveryOptions">
+                     <graphic>
+                        <Label style="-fx-font-weight: normal;" text="FREE pick up in store.                                                                          &#10;" />
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Click to select option" />
+                     </tooltip>
+                  </ToggleButton>
+                  <FlowPane layoutX="17.0" layoutY="305.0" prefHeight="48.0" prefWidth="673.0">
+                     <children>
+                        <Label text="Further information regarding our" />
+                        <Hyperlink text="delivery options" underline="true">
+                           <FlowPane.margin>
+                              <Insets left="-2.0" right="-1.0" />
+                           </FlowPane.margin>
+                        </Hyperlink>
+                        <Label text="and our" />
+                        <Hyperlink text="refunds policy" underline="true">
+                           <FlowPane.margin>
+                              <Insets left="-2.0" right="-1.0" />
+                           </FlowPane.margin>
+                        </Hyperlink>
+                        <Label text=".">
+                           <FlowPane.margin>
+                              <Insets left="-4.0" />
+                           </FlowPane.margin>
+                        </Label>
+                     </children>
+                  </FlowPane>
+                  <TextField layoutX="17.0" layoutY="366.0" prefHeight="41.0" prefWidth="273.0" />
+               </children>
+            </Pane>
+         </children>
+      </Pane> 
+      <Pane id="bottomPanel" fx:id="bottomPanel" layoutX="314.0" layoutY="839.0" prefHeight="75.0" prefWidth="200.0" stylesheets="@TopBottomPanels.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label id="newsletterLabel" layoutX="70.0" layoutY="17.0" prefHeight="41.0" prefWidth="184.0" stylesheets="@TopBottomPanels.css" text="JOIN OUR NEWSLETTER:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField id="enterEmailTextField" focusTraversable="false" layoutX="254.0" layoutY="17.0" prefHeight="41.0" prefWidth="300.0" promptText="Enter email address" stylesheets="@TopBottomPanels.css" />
+            <Button id="instaBtn" fx:id="instaBtn" layoutX="1336.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" text="INSTAGRAM" />
+            <Button id="facebookBtn" fx:id="facebookBtn" layoutX="1432.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" text="FACEBOOK" />
+            <Button id="twitterBtn" fx:id="twitterBtn" layoutX="1522.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" text="TWITTER" />
+            <Button id="pinterestBtn" fx:id="pinterestBtn" layoutX="1598.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" text="PINTEREST" />
+            <Button id="youtubeBtn" fx:id="youtubeBtn" layoutX="1687.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" text="YOUTUBE" />
+            <Button fx:id="helpImgBtn" layoutX="1784.0" layoutY="15.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice">
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Help-Icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Help &amp; Store Info" />
+               </tooltip>
+            </Button>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

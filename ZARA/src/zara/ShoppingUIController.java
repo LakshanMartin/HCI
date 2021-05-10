@@ -42,6 +42,13 @@ public class ShoppingUIController implements Initializable
         shoppingUI.getChildren().setAll(homepage);
     }
     
+    @FXML
+    private void loadShoppingCart(MouseEvent event) throws IOException
+    {
+        AnchorPane shoppingCart = FXMLLoader.load(getClass().getResource("ShoppingCart.fxml"));
+        shoppingUI.getChildren().setAll(shoppingCart);
+    }
+    
     /**
      * Reloads ShoppingUI window
      * @param event
