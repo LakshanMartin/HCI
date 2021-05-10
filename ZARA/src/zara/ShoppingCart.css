@@ -10,12 +10,12 @@
 }
 
 .toggle-button:hover{
-    -fx-background-color: grey, white;
+    -fx-background-color: #787878, white;
     -fx-background-insets: 0, 0 0 0 10;
 }
 
 .toggle-button:selected{
-    -fx-background-color: grey, white;
+    -fx-background-color: #787878, white;
     -fx-background-insets: 0, 0 0 0 10;
 }
 
@@ -43,3 +43,33 @@
 }
 
 /* Elements in Main Section --------------------------------------------------*/
+#discountTxtField{
+    -fx-background-radius: 0;
+}
+
+
+#addDiscountBtn{
+    -fx-background-color: #4D4D4D;
+    -fx-text-fill: white;
+    -fx-background-radius: 0;
+}
+
+#addDiscountBtn:pressed{
+    -fx-background-color: #787878;
+    -fx-text-fill: white;
+}
+
+#line{
+    -fx-stroke-width: 0.15px;
+}
+
+#checkoutBtn{
+    -fx-background-color: #4D4D4D;
+    -fx-text-fill: white;
+    -fx-background-radius: 0;
+}
+
+#checkoutBtn:pressed{
+    -fx-background-color: #787878;
+    -fx-text-fill: white;
+}
