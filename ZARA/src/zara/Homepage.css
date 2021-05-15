@@ -1,14 +1,11 @@
 /*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 29/04/2021, 1:35:01 AM
-    Author     : student
-*/
+ * CSS styling specific to elements present on the Homepage window.
+ *
+ * Created on : 29/04/2021, 1:35:01 AM
+ * Author     : Lakshan Martin
+ */
 
-/* Class styling -------------------------------------------------------------*/
+/* GENERAL CLASS STYLING -----------------------------------------------------*/
 .button{
     -fx-background-color: transparent;
     -fx-font-family: Verdana;
@@ -28,4 +25,3 @@ and open the template in the editor.
     -fx-font-family: default;
     -fx-font-size: 11px;
 }
-

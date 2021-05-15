@@ -19,7 +19,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author student
+ * @author Lakshan Martin
  */
 public class HomepageController implements Initializable 
 {
@@ -43,6 +43,11 @@ public class HomepageController implements Initializable
         homepage.getChildren().setAll(shoppingUI);
     }
     
+    /**
+     * Link to the ShoppingCart window
+     * @param event
+     * @throws IOException 
+     */
     @FXML
     private void loadShoppingCart(MouseEvent event) throws IOException
     {

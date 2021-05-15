@@ -1,8 +1,11 @@
 /*
- * Empty Stylesheet file.
+ * CSS styling specific to elements present on the ShoppingCart window.
+ *
+ * Created on : 29/04/2021, 1:35:01 AM
+ * Author     : Lakshan Martin
  */
 
-/* Class Styling -------------------------------------------------------------*/
+/* GENERAL CLASS STYLING------------------------------------------------------*/
 .toggle-button{
     -fx-background-color: transparent;
     -fx-cursor: hand;
@@ -54,7 +57,7 @@
     -fx-cursor: hand;
 }
 
-/* Elements in Main Section --------------------------------------------------*/
+/* MAIN SECTION ELEMENTS -----------------------------------------------------*/
 #discountTxtField{
     -fx-background-radius: 0;
 }

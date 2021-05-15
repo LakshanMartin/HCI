@@ -24,9 +24,9 @@
                   <Font size="20.0" />
                </font>
             </TextField>
-            <Button id="mensTopBtn" layoutX="430.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#loadShoppingUI" prefHeight="80.0" prefWidth="161.0" text="MEN" />
-            <Button id="womensTopBtn" fx:id="womenTopBtn" layoutX="600.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" prefHeight="80.0" prefWidth="161.0" text="WOMEN" />
-            <Button id="kidsTopBtn" fx:id="kidsTopBtn" layoutX="770.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" prefHeight="80.0" prefWidth="161.0" text="KIDS" />
+            <Button id="mensTopBtn" layoutX="430.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#loadShoppingUI" prefHeight="80.0" prefWidth="161.0" text="MEN" visible="false" />
+            <Button id="womensTopBtn" fx:id="womenTopBtn" layoutX="600.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" prefHeight="80.0" prefWidth="161.0" text="WOMEN" visible="false" />
+            <Button id="kidsTopBtn" fx:id="kidsTopBtn" layoutX="770.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" prefHeight="80.0" prefWidth="161.0" text="KIDS" visible="false" />
             <Button id="loginBtn" fx:id="accountBtn" alignment="BOTTOM_LEFT" contentDisplay="RIGHT" layoutX="1570.0" layoutY="28.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" prefHeight="39.0" text="Log In / Register">
                <font>
                   <Font size="20.0" />
@@ -64,14 +64,14 @@
                   <Image url="@../Homepage-Kids.jpg" />
                </image>
             </ImageView>
-            <Button id="mensMidBtn" layoutX="220.0" layoutY="720.0" mnemonicParsing="false" onMouseClicked="#loadShoppingUI" prefHeight="80.0" prefWidth="160.0" text="MEN">
+            <Button id="mensMidBtn" layoutX="220.0" layoutY="700.0" mnemonicParsing="false" onMouseClicked="#loadShoppingUI" prefHeight="80.0" prefWidth="160.0" text="MEN">
                <font>
                   <Font size="40.0" />
                </font>
             </Button>
-            <Button id="womensMidBtn" fx:id="womenMidBtn" layoutX="868.0" layoutY="720.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" text="WOMEN" />
-            <Button id="kidsMidBtn" fx:id="kidsMidBtn" layoutX="1546.0" layoutY="720.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" text="KIDS" />
-            <Button fx:id="mensImgBtn" layoutX="100.0" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#loadShoppingUI" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: transparent;">
+            <Button id="womensMidBtn" fx:id="womenMidBtn" layoutX="868.0" layoutY="700.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" text="WOMEN" />
+            <Button id="kidsMidBtn" fx:id="kidsMidBtn" layoutX="1546.0" layoutY="700.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" text="KIDS" />
+            <Button id="test" fx:id="mensImgBtn" layoutX="100.0" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#loadShoppingUI" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: transparent;">
                <tooltip>
                   <Tooltip text="Mens Collection" />
                </tooltip>

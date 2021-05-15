@@ -1,14 +1,11 @@
 /*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 03/05/2021, 11:40:23 PM
-    Author     : student
-*/
+ * CSS styling specific to elements present on the ShoppingUI window.
+ *
+ * Created on : 29/04/2021, 1:35:01 AM
+ * Author     : Lakshan Martin
+ */
 
-/* Class Styling -------------------------------------------------------------*/
+/* GENERAL CLASS STYLING -----------------------------------------------------*/
 .button{
     -fx-background-color: transparent;
     -fx-cursor: hand;
@@ -49,7 +46,7 @@ and open the template in the editor.
     -fx-background-color: #E6E6E6;
 }
 
-/* Main Logo -----------------------------------------------------------------*/
+/* MAIN LOGO -----------------------------------------------------------------*/
 #mainLogoBtn:hover{
     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
 }
@@ -58,7 +55,7 @@ and open the template in the editor.
     -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.9), 10, 0, 0, 0);
 }
 
-/* Elements in the Sub-heading panel -----------------------------------------*/
+/* SUB-HEADING PANEL ELEMENTS ------------------------------------------------*/
 #homepageNavBtn:hover{
     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
 }
@@ -67,7 +64,7 @@ and open the template in the editor.
     -fx-effect: dropshadow(three-pass-box, rgba(255, 255, 255, 0.9), 10, 0, 0, 0);
 }
 
-/* Elements in main section --------------------------------------------------*/
+/* MAIN SECTION ELEMENTS -----------------------------------------------------*/
 /*Make titled panes transparent*/
 #mainPanel .accordion .titled-pane > *.content{
     -fx-border-color: transparent;

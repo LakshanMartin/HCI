@@ -1,11 +1,9 @@
 /*
-CSS styling for the Top and Bottom fixed panels that are present across all
-three windows designed.
-*/
-/* 
-    Created on : 08/05/2021, 9:51:03 PM
-    Author     : Lakshan Martin
-*/
+ * CSS styling specific to elements present on the fixed Top and Bottom panels.
+ *
+ * Created on : 29/04/2021, 1:35:01 AM
+ * Author     : Lakshan Martin
+ */
 
 /* GENERAL CLASS STYLING -----------------------------------------------------*/
 .button{

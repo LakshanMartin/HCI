@@ -40,8 +40,8 @@
                   <Font size="20.0" />
                </font>
             </TextField>
-            <Button id="mensTopBtn" fx:id="mensTopBtn" layoutX="430.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#loadShoppingUI" prefHeight="80.0" prefWidth="161.0" stylesheets="@TopBottomPanels.css" text="MEN" underline="true" />
-            <Button id="womensTopBtn" fx:id="womenTopBtn" layoutX="600.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" prefHeight="80.0" prefWidth="161.0" stylesheets="@TopBottomPanels.css" text="WOMEN" />
+            <Button id="mensTopBtn" fx:id="mensTopBtn" layoutX="430.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#loadShoppingUI" prefHeight="80.0" prefWidth="161.0" stylesheets="@TopBottomPanels.css" text="MEN" />
+            <Button id="womensTopBtn" fx:id="womensTopBtn" layoutX="600.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" prefHeight="80.0" prefWidth="161.0" stylesheets="@TopBottomPanels.css" text="WOMEN" />
             <Button id="kidsTopBtn" fx:id="kidsTopBtn" layoutX="770.0" layoutY="37.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" prefHeight="80.0" prefWidth="161.0" stylesheets="@TopBottomPanels.css" text="KIDS" />
             <Button id="loginBtn" fx:id="accountBtn" alignment="BOTTOM_LEFT" contentDisplay="RIGHT" layoutX="1570.0" layoutY="28.0" mnemonicParsing="false" onMouseClicked="#loadScopeNotice" prefHeight="39.0" stylesheets="@TopBottomPanels.css" text="Log In / Register">
                <font>
@@ -169,7 +169,7 @@
                                                       <Tooltip contentDisplay="RIGHT" text="Decrease quantity" />
                                                    </tooltip>
                                                 </Button>
-                                                <TextField id="qtyTxtField" fx:id="qtyText" alignment="CENTER" prefHeight="35.0" prefWidth="35.0" promptText="0" text="1" />
+                                                <TextField id="qtyTxtField" alignment="CENTER" prefHeight="35.0" prefWidth="35.0" promptText="0" text="1" />
                                                 <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" text="+">
                                                    <font>
                                                       <Font size="16.0" />
@@ -672,8 +672,8 @@
                         </Label>
                      </children>
                   </FlowPane>
-                  <TextField id="discountTxtField" alignment="CENTER" layoutX="17.0" layoutY="420.0" prefHeight="40.0" prefWidth="709.0" promptText="Enter discount code" />
-                  <Button id="addDiscountBtn" layoutX="724.0" layoutY="420.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="123.0" text="Add">
+                  <TextField id="discountTxtField" alignment="CENTER" layoutX="17.0" layoutY="420.0" prefHeight="40.0" prefWidth="704.0" promptText="Enter discount code" />
+                  <Button id="addDiscountBtn" layoutX="721.0" layoutY="420.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="123.0" text="Add">
                      <font>
                         <Font size="14.0" />
                      </font>
