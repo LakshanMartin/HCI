@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.animation.FadeTransition;
+import javafx.animation.TranslateTransition;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -35,6 +36,9 @@ public class ShoppingCartController implements Initializable
     private AnchorPane shoppingCart;
     
     @FXML
+    private Button mainLogoBtn;
+    
+    @FXML
     private Button mensTopBtn;
     
     @FXML
@@ -50,27 +54,55 @@ public class ShoppingCartController implements Initializable
     @Override
     public void initialize(URL url, ResourceBundle rb)
     {
-        //Implement fade in effect on Top panel buttons
+        TranslateTransition logoTrans, mensTrans, womensTrans, kidsTrans;
         FadeTransition mensFade, womensFade, kidsFade;
      
+        //Implement Main Logo animation effect
+        logoTrans = new TranslateTransition();
+        logoTrans.setByX(-775);
+        logoTrans.setDuration(Duration.millis(3000));
+        logoTrans.setNode(mainLogoBtn);
+        logoTrans.play();
+        
+        //Implement Mens button animation effects
+        mensTrans = new TranslateTransition();
+        mensTrans.setByX(-395);
+        mensTrans.setDuration(Duration.millis(3000));
+        mensTrans.setNode(mensTopBtn);
+        mensTrans.play();
+        
         mensFade = new FadeTransition();
-        mensFade.setDuration(Duration.millis(3000));
+        mensFade.setDuration(Duration.millis(5000));
         mensFade.setFromValue(0.1);
         mensFade.setToValue(10);
         mensFade.setAutoReverse(false);
         mensFade.setNode(mensTopBtn);        
         mensFade.play();
         
+        //Implement Womens button animation effects
+        womensTrans = new TranslateTransition();
+        womensTrans.setByX(-225);
+        womensTrans.setDuration(Duration.millis(3000));
+        womensTrans.setNode(womensTopBtn);
+        womensTrans.play();
+        
         womensFade = new FadeTransition();
-        womensFade.setDuration(Duration.millis(3000));
+        womensFade.setDuration(Duration.millis(5000));
         womensFade.setFromValue(0.1);
         womensFade.setToValue(10);
         womensFade.setAutoReverse(false);
         womensFade.setNode(womensTopBtn);
         womensFade.play();
         
+        //Implement Kids button animation effects
+        kidsTrans = new TranslateTransition();
+        kidsTrans.setByX(-55);
+        kidsTrans.setDuration(Duration.millis(3000));
+        kidsTrans.setNode(kidsTopBtn);
+        kidsTrans.play();
+        
         kidsFade = new FadeTransition();
-        kidsFade.setDuration(Duration.millis(3000));
+        kidsFade.setDuration(Duration.millis(5000));
         kidsFade.setFromValue(0.1);
         kidsFade.setToValue(10);
         kidsFade.setAutoReverse(false);
